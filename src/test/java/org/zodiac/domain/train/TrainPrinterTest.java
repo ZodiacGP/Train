@@ -23,12 +23,9 @@ class TrainPrinterTest {
 		train.addCarriage(locomotive);
 		train.addCarriage(new FreightCarriage());
 		train.addCarriage(new PassengerCarriage());
-		train.addCarriage(locomotive);
-		train.addCarriage(new FreightCarriage());
 		train.addCarriage(new PassengerCarriage());
-		train.addCarriage(new FreightCarriage());
 		train.addCarriage(new PassengerCarriage());
-		train.addCarriage(new FreightCarriage());
+
 		assertDoesNotThrow(() -> TrainPrinter.printTrain(train));
 	}
 
